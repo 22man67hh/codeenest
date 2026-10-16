@@ -11,6 +11,9 @@ import { FaqAccordion } from './components/FaqAccordion';
 import { Footer } from './components/Footer';
 import { QuoteModal } from './components/QuoteModal';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
+import { DashainDecorations } from './components/DashainDecorations';
+import { DashainSwing } from './components/DashainSwing';
+import { DashainMusic } from './components/DashainMusic';
 
 export const App: React.FC = () => {
   const [quoteModalOpen, setQuoteModalOpen] = useState(false);
@@ -64,6 +67,16 @@ export const App: React.FC = () => {
 
       {/* Floating Action Elements */}
       <FloatingWhatsApp />
+
+      {/* ─── Dashain Festival Vibes ─────────────────────────────────────────── */}
+      {/* Tika dots + jamara grass + falling petals + greeting banner */}
+      <DashainDecorations />
+
+      {/* Traditional linge ping / swing — bottom-right corner */}
+      <DashainSwing />
+
+      {/* Malashree Dhun player — bottom-left corner */}
+      <DashainMusic />
 
       {/* Interactive Free Quote & Proposal Modal */}
       <QuoteModal
